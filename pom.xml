@@ -28,7 +28,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.5.1</version>
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
@@ -37,7 +37,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>1.4</version>
+                <version>2.4.3</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -56,6 +56,7 @@
                                     <shadedPattern>com.drtshock.playervaults.lib.uuid</shadedPattern>
                                 </relocation>
                             </relocations>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
                     </execution>
                 </executions>
@@ -82,12 +83,12 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <version>1.10.2-R0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
             <artifactId>VaultAPI</artifactId>
-            <version>1.5</version>
+            <version>1.6</version>
         </dependency>
         <dependency>
             <groupId>com.turt2live</groupId>
